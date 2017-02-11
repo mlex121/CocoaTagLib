@@ -20,6 +20,27 @@
 			remoteGlobalIDString = F62401531E4F295A003B5E90;
 			remoteInfo = CocoaTagLib;
 		};
+		F66ED97B1E4F39AE00B5285F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66ED9711E4F39AD00B5285F /* taglib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB1456D471864A95812B5AD8;
+			remoteInfo = tag;
+		};
+		F66ED97D1E4F39AE00B5285F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66ED9711E4F39AD00B5285F /* taglib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B59C580DDA934F66A3D1C792;
+			remoteInfo = tag_c;
+		};
+		F66ED97F1E4F3A2600B5285F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66ED9711E4F39AD00B5285F /* taglib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9BDDE76B16F4CD4AE58632F;
+			remoteInfo = tag;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +50,7 @@
 		F624015D1E4F295A003B5E90 /* CocoaTagLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTagLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62401621E4F295A003B5E90 /* CocoaTagLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaTagLibTests.m; sourceTree = "<group>"; };
 		F62401641E4F295A003B5E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66ED9711E4F39AD00B5285F /* taglib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = taglib.xcodeproj; path = taglib/taglib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,7 @@
 		F624014A1E4F295A003B5E90 = {
 			isa = PBXGroup;
 			children = (
+				F66ED9711E4F39AD00B5285F /* taglib.xcodeproj */,
 				F62401561E4F295A003B5E90 /* CocoaTagLib */,
 				F62401611E4F295A003B5E90 /* CocoaTagLibTests */,
 				F62401551E4F295A003B5E90 /* Products */,
@@ -86,6 +109,15 @@
 			path = CocoaTagLibTests;
 			sourceTree = "<group>";
 		};
+		F66ED9721E4F39AD00B5285F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F66ED97C1E4F39AE00B5285F /* tag.framework/tag */,
+				F66ED97E1E4F39AE00B5285F /* tag_c.framework/tag_c */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -112,6 +144,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F66ED9801E4F3A2600B5285F /* PBXTargetDependency */,
 			);
 			name = CocoaTagLib;
 			productName = CocoaTagLib;
@@ -165,6 +198,12 @@
 			mainGroup = F624014A1E4F295A003B5E90;
 			productRefGroup = F62401551E4F295A003B5E90 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F66ED9721E4F39AD00B5285F /* Products */;
+					ProjectRef = F66ED9711E4F39AD00B5285F /* taglib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F62401531E4F295A003B5E90 /* CocoaTagLib */,
@@ -172,6 +211,25 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F66ED97C1E4F39AE00B5285F /* tag.framework/tag */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = tag.framework/tag;
+			path = tag.framework;
+			remoteRef = F66ED97B1E4F39AE00B5285F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F66ED97E1E4F39AE00B5285F /* tag_c.framework/tag_c */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = tag_c.framework/tag_c;
+			path = tag_c.framework;
+			remoteRef = F66ED97D1E4F39AE00B5285F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F62401521E4F295A003B5E90 /* Resources */ = {
@@ -213,6 +271,11 @@
 			isa = PBXTargetDependency;
 			target = F62401531E4F295A003B5E90 /* CocoaTagLib */;
 			targetProxy = F624015F1E4F295A003B5E90 /* PBXContainerItemProxy */;
+		};
+		F66ED9801E4F3A2600B5285F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tag;
+			targetProxy = F66ED97F1E4F3A2600B5285F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,6 +472,7 @@
 				F624016A1E4F295A003B5E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F624016B1E4F295A003B5E90 /* Build configuration list for PBXNativeTarget "CocoaTagLibTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +481,7 @@
 				F624016D1E4F295A003B5E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
